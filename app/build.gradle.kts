@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId = "com.ravikantsharma.mvinotesapp"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -51,6 +51,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.material3.icons.extended)
 
     // Hilt
     implementation(libs.hilt.android)
@@ -76,6 +77,8 @@ dependencies {
     // Mockito
     testImplementation(libs.mockito.kotlin)
 
+    // Turbine
+    testImplementation(libs.turbine)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
