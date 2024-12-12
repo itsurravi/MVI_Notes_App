@@ -51,8 +51,10 @@ import com.ravikantsharma.mvinotesapp.util.Constants.ROUTE_DETAIL_ARG_NAME
 import com.ravikantsharma.mvinotesapp.util.Constants.ROUTE_DETAIL_PATH
 import com.ravikantsharma.mvinotesapp.util.Constants.ROUTE_HOME
 import com.ravikantsharma.mvinotesapp.util.stringResource
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
